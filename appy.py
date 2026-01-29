@@ -12,7 +12,7 @@ import threading
 
 # Flask app initialization
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:hai2652003@localhost/student_usth"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 socketio = SocketIO(app, cors_allowed_origins="*")  # Enable SocketIO with CORS
